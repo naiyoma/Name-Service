@@ -6,28 +6,25 @@ import contractAbi from "./utils/contractABI.json";
 import { networks } from './utils/networks';
 import { ethers } from 'ethers';
 import './App.css';
-// import twitterLogo from 'public/assets/twitter-logo.svg';
-// import polygonLogo from './assets/polygonlogo.png';
-// import ethLogo from './assets/ethlogo.png';
 
 
-require('@nomiclabs/hardhat-waffle');
-require('dotenv').config();
+// require('@nomiclabs/hardhat-waffle');
+// require('dotenv').config();
 
-module.exports = {
-  solidity: '0.8.10',
-  networks: {
-    mumbai: {
-      url: process.env.STAGING_ALCHEMY_KEY,
-      accounts: [process.env.PRIVATE_KEY],
-    },
-    mainnet: {
-      chainId: 1,
-      url: process.env.PROD_ALCHEMY_KEY,
-      accounts: [process.env.PRIVATE_KEY],
-    },
-  },
-};
+// module.exports = {
+//   solidity: '0.8.10',
+//   networks: {
+//     mumbai: {
+//       url: process.env.STAGING_ALCHEMY_KEY,
+//       accounts: [process.env.PRIVATE_KEY],
+//     },
+//     mainnet: {
+//       chainId: 1,
+//       url: process.env.PROD_ALCHEMY_KEY,
+//       accounts: [process.env.PRIVATE_KEY],
+//     },
+//   },
+// };
 
 const tld = '.naiyoma';
 const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS;
